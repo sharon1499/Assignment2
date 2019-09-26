@@ -9,9 +9,10 @@ function config($key = '')
     $config = [
         'name' => 'page name..',
         'pretty_uri' => false,
-        'site_url' => 'https://csu-php-demo.herokuapp.com',
+        'site_url' => 'http:/csu-assignment.herokuapp.com',
         'nav_menu' => [
-            'home' => 'Home'
+            'home' => 'Home',
+            'random' = 'Random Image'
         ],
         'template_path' => 'template',
         'content_path' => 'content',
