@@ -1,5 +1,5 @@
 <div class='jumbotron'>
 </div>
 <div>
-function to bring back comic.
+<p>function to bring back comic.</p>
 </div>

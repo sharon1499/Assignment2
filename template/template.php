@@ -24,7 +24,7 @@
       <? nav_menu(); ?>
     </div>
   </div>
-  <?php page_content(); ?>
 </nav>
+<?php page_content(); ?>
 </body>
 </html>
