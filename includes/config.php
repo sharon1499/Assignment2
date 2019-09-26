@@ -7,7 +7,7 @@
 function config($key = '')
 {
     $config = [
-        'name' => 'page name..',
+        'name' => 'Images',
         'pretty_uri' => false,
         'site_url' => 'http:/csu-assignment.herokuapp.com',
         'nav_menu' => [
