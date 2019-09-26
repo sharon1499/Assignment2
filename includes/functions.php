@@ -56,7 +56,8 @@ function page_content()
     if (! file_exists($path)) {
         $path = getcwd() . '/' . config('content_path') . '/404.php';
     }
-    echo file_get_contents($path);
+    //echo file_get_contents($path);
+    require config('content_path'). '/'. $page.'.php';
 }
 /**
  * Starts everything and displays the template.

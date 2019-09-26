@@ -22,9 +22,9 @@
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
       <?php nav_menu(); ?>
-      <?php page_content(); ?>
     </div>
   </div>
 </nav>
+<?php page_content(); ?>
 </body>
 </html>
