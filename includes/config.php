@@ -12,7 +12,7 @@ function config($key = '')
         'site_url' => 'http:/csu-assignment.herokuapp.com',
         'nav_menu' => [
             'home' => 'Home',
-            'random' = 'Random Image'
+            'random' => 'Random Image'
         ],
         'template_path' => 'template',
         'content_path' => 'content',
