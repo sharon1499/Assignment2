@@ -9,9 +9,9 @@ function config($key = '')
     $config = [
         'name' => 'Images',
         'pretty_uri' => false,
-        'site_url' => 'http:/csu-assignment.herokuapp.com',
+        'site_url' => 'http://csu-assignment.herokuapp.com',
         'nav_menu' => [
-            'home' => 'Home',
+            '' => 'Home',
             'random' => 'Random Image'
         ],
         'template_path' => 'template',
