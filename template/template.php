@@ -11,20 +11,20 @@
     <title><?php page_title(); ?></title>
   </head>
   <body style="padding-bottom: 100px;">
-    <div class="jumbotron">
-    <h1><?php site_name(); ?></h1>
-    </div>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="http://csu-assignment2.herokuapp.com">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+     <a class="navbar-brand" href="http://csu-assignment2.herokuapp.com"></a>
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+     <span class="navbar-toggler-icon"></span>
+     </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
       <a><?php nav_menu(); ?></a>
     </div>
   </div>
 </nav>
+    <div class="jumbotron">
+    <h1>Comic Generator!</h1>
+    </div>
 <?php page_content(); ?>
 </body>
 </html>
