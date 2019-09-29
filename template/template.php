@@ -15,7 +15,7 @@
 
      <a class="navbar-toggler navbar-brand" href="#">
      <i class="fa fa-2x fa-home">
-     ::before
+     ::before ==$0
      </i></a>
      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
      <span class="navbar-toggler-icon"></span>
