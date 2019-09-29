@@ -13,7 +13,7 @@
   <body style="padding-bottom: 75px;">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
-     <a class="navbar-toggler navbar-brand" href="#">
+     <a class="navbar-toggler navbar-brand" href="http://csu-assignment2.herokuapp.com">
      <i class="fa fa-2x fa-home">
      ::before ==$0
      </i></a>
