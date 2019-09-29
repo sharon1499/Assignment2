@@ -15,7 +15,7 @@
     <h1><?php site_name(); ?></h1>
     </div>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="http://csu-assignment.herokuapp.com">Navbar</a>
+  <a class="navbar-brand" href="http://csu-assignment2.herokuapp.com">Navbar</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
