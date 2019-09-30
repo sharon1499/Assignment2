@@ -1,3 +1,4 @@
+<div>
 <div class="row" style="padding-top:15px; margin-right: 0px; margin-left: 0px;">
     <button id="testButton" type="button" class="mx-auto btn btn-danger">Generate Random Comic</button>
     </div>
@@ -7,6 +8,8 @@
         <br>
         <h3>2017</h3>
         <br>
+        <?php getComic(); ?><img style = "width:100%; height:auto;" src="http://xkcd.com/614/info.0.json">
+        </div>
         </div>
         </div>
 <script>
