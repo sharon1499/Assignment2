@@ -8,8 +8,7 @@
         <br>
         <h3>2017</h3>
         <br>
-
-        <?php getComic(); ?>
+        <img src="http://xkcd.com/261/info.0.json" onclick=getComic()/>
         </div>
         </div>
         </div>
