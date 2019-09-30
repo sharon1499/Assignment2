@@ -9,6 +9,7 @@
         <h3>2017</h3>
         <br>
         <img style="width:100%; height: auto;" src="http://xkcd.com/261/info.0.json"/>
+        <?php getComic(); ?>
         </div>
         </div>
         </div>
