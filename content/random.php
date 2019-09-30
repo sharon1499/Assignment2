@@ -1,14 +1,16 @@
 <div class="row" style="padding-top:15px; margin-right: 0px; margin-left: 0px;">
   <button id="testButton" type="button" class="mx-auto btn btn-dark">Generate Random Comic</button>
 </div>
-  <div class="mx-auto" style="padding:20px">
-    <h2>Drone Fishing</h2>
+<div class="row" style="margin-right: 0px; margin-left: 0px;">
+  <div class="mx-auto" style="padding:20px" id="target_div">
+    <h2>Security</h2>
     <br>
-    <h3>2019</h3>
+    <h3>2009</h3>
     <br>
-    echo '<img src="http://xkcd.com/614/info.0.json" onlick = getComic() />'
-    </div>
+    <img style="width:100%; height:auto;" src="https://imgs.xkcd.com/614/info.0.json" alt="test">  </div>
 </div>
+
+
 
 <script>
     $('#testButton').click(function(e)){
