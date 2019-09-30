@@ -5,7 +5,7 @@
     <br>
     <h3>2019</h3>
     <br>
-    echo '<img src="'.getComic().'" onlick = getComic() />'
+    echo '<img src="http://xkcd.com/614/info.0.json" onlick = getComic() />'
     </div>
 </div>
 
