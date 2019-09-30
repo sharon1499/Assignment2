@@ -59,6 +59,25 @@ function page_content()
     echo file_get_contents($path);
     //require config('content_path'). '/'. $page.'.php';
 }
+function getComic()
+{
+    $url = XKCDURL;
+    /**dont change
+    */
+    $handle = curl_init();
+    curl_setopt($handle, CURLOPT_URL, $url);
+    curl_setopt_array($handle,
+    array(
+    CURLOPT_URL => $url,
+    CURLOPT_RETURNTRANSFER => true
+    )
+    );
+    $output = curl_exec($handle);
+    $response = json_decode($output, true);
+    curl_close($handle);
+    /*dont change
+    */
+}
 /**
  * Starts everything and displays the template.
  */
