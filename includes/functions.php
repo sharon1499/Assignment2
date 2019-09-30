@@ -81,6 +81,7 @@ function getComic()
     curl_close($handle);
     /*dont change
     */
+    echo("http://xkcd.com/". rand(0,615)."/info.0.json");
 }
 /**
  * Starts everything and displays the template.
