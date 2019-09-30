@@ -1,5 +1,6 @@
-<div class="row" style="margin-right: 0px' margin-left: 0px;">
-<button id="testButton" type="button" class="mx-auto btn btn-dark">Generate Random Comic</button>
+<div class="row" style="padding-top:15px; margin-right: 0px; margin-left: 0px;">
+  <button id="testButton" type="button" class="mx-auto btn btn-dark">Generate Random Comic</button>
+</div>
   <div class="mx-auto" style="padding:20px">
     <h2>Drone Fishing</h2>
     <br>
