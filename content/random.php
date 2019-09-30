@@ -1,3 +1,4 @@
+<div>
 <div class="row" style="padding-top:15px; margin-right: 0px; margin-left: 0px;">
   <button id="testButton" type="button" class="mx-auto btn btn-dark">Generate Random Comic</button>
 </div>
@@ -9,6 +10,7 @@
     <br>
     <img style="width:100%; height:auto;" src="https://xkcd.com/614/info.0.json" alt="test">  </div>
 </div>
+<div>
 
 
 
