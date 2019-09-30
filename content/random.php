@@ -13,7 +13,7 @@
     $.ajax(
     {
         type: 'post',  //whats your request type
-        url: "/content/random.phtml",  // whats your php file
+        url: "/content/random.php",  // whats your php file
         data: {'random' : true}, //what data are you sending via JSON
         dataType:"HTML", // what type of data are you getting back
         success: function(data)
