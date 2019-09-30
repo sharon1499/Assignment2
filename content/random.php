@@ -1,17 +1,13 @@
-<div>
-<div class="row" style="padding-top:15px; margin-right: 0px; margin-left: 0px;">
-    <button id="testButton" type="button" class="mx-auto btn btn-danger">Generate Random Comic</button>
+<div class="row" style="margin-right: 0px' margin-left: 0px;">
+  <div class="mx-auto" style="padding:20px">
+    <h2>Drone Fishing</h2>
+    <br>
+    <h3>2019</h3>
+    <br>
+    <img style="width:100%; height: auto;" src="http://xkcd.com/614/info.0.json" alt="test">
     </div>
-<div class="row" style="margin-right: 0px; margin-left: 0px;">
-    <div class="mx-auto" style="padding: 20px" id="target_div">
-        <h2>Mispronunciation</h2>
-        <br>
-        <h3>2017</h3>
-        <br>
-        <img onclick=getComic() src="http://xkcd.com/261/info.0.json"/>
-        </div>
-        </div>
-        </div>
+</div>
+
 <script>
     $('#testButton').click(function(e)){
     $.ajax(
