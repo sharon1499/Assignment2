@@ -60,25 +60,24 @@ function page_content()
     //require config('content_path'). '/'. $page.'.php';
     require config('config_path'). $path;
 }
-function getComic()
-{
-    $url = 'http://xkcd.com/info.0.json';
-    /**dont change
-    */
-    $handle = curl_init();
-    curl_setopt($handle, CURLOPT_URL, $url);
-    curl_setopt_array($handle,
-    array(
-    CURLOPT_URL => $url,
-    CURLOPT_RETURNTRANSFER => true
-    )
-    );
-    $output = curl_exec($handle);
-    $response = json_decode($output, true);
-    curl_close($handle);
-    /*dont change
-    */
-    echo $response["img"];
+function getComicImage(){
+$url = 'https://xkcd.com/info.0.json';
+/**dont change
+*/
+$handle = curl_init();
+curl_setopt($handle, CURLOPT_URL, $url);
+curl_setopt_array($handle,
+array(
+CURLOPT_URL => $url,
+CURLOPT_RETURNTRANSFER => true
+)
+);
+$output = curl_exec($handle);
+$response = json_decode($output, true);
+curl_close($handle);
+/*dont change
+*/
+echo $response["img"];
 }
 /**
  * Starts everything and displays the template.
