@@ -10,7 +10,7 @@
 
     <title><?php site_name(); ?></title>
   </head>
-  <body style="padding-bottom: 100px;">
+  <body style="padding-bottom: 75px;">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
      <a class="navbar-toggler navbar-brand" href="#">NavBar</a>
