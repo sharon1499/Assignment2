@@ -82,7 +82,7 @@ echo $response["img"];
 
 function imageRand(){
 $rNum = rand(1,2208);
-$url = 'https://xkcd.com/'. $rNum. '/'.'info.0.json';
+$url = 'https://xkcd.com/'. $rNum.'/info.0.json';
 /**dont change
 */
 $handle = curl_init();
@@ -99,14 +99,14 @@ curl_close($handle);
 /*dont change
 */
 echo $response["img"];
-echo $url;
+//echo $url;
 }
-/*
+
 function getComicURLRand(){
 $randNum = rand(1,2208);
-$url = 'https://xkcd.com/'. $randNum. '/'.'info.0.json';
+$url = 'https://xkcd.com/'. $randNum. '/info.0.json';
 echo $url;
-}*/
+}
 /**
  * Starts everything and displays the template.
  */
