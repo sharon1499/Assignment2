@@ -107,6 +107,53 @@ $randNum = rand(1,2208);
 $url = 'https://xkcd.com/'. $randNum. '/info.0.json';
 echo $url;
 }
+
+/**Function for getting the comic title and date */
+function getComicTitle(){
+$url = 'https://xkcd.com/info.0.json';
+/**dont change
+*/
+$handle = curl_init();
+curl_setopt($handle, CURLOPT_URL, $url);
+curl_setopt_array($handle,
+array(
+CURLOPT_URL => $url,
+CURLOPT_RETURNTRANSFER => true
+)
+);
+$output = curl_exec($handle);
+$response = json_decode($output, true);
+curl_close($handle);
+/*dont change
+*/
+echo '<h1>' . $response["title"] . '</h1>';
+echo '<br>';
+echo '<h4>' . $response["month"] . '/' . $response["day"] . '/'. $response["year"] . '</h4>';
+}
+
+/**Function for getting the comic title and date for random comic for random comic */
+function getComicTitleRand(){
+$randNum = rand(1,2208);
+$url = 'https://xkcd.com/'. $randNum. '/'.'info.0.json';
+/**dont change
+*/
+$handle = curl_init();
+curl_setopt($handle, CURLOPT_URL, $url);
+curl_setopt_array($handle,
+array(
+CURLOPT_URL => $url,
+CURLOPT_RETURNTRANSFER => true
+)
+);
+$output = curl_exec($handle);
+$response = json_decode($output, true);
+curl_close($handle);
+/*dont change
+*/
+echo '<h1>' . $response["title"] . '</h1>';
+echo '<br>';
+echo '<h4>' . $response["month"] . '/' . $response["day"] . '/'. $response["year"] . '</h4>';
+}
 /**
  * Starts everything and displays the template.
  */
