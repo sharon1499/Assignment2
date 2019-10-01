@@ -19,11 +19,10 @@
 }
 </script>
 <div class="row" style="padding-top:15px; margin-right: 0px; margin-left: 0px;">
-  <button id="testButton" type="button" class="mx-auto btn btn-dark">Generate Random Comic</button>
+  <button id="testButton" type="button" onclick="comic()" class="mx-auto btn btn-dark">Generate Random Comic</button>
 </div>
 <div class="row" style="margin-right: 0px; margin-left: 0px;">
 	<div class="mx-auto" style="padding:20px">
     <img style="width:auto; height: auto;" src = <?php getRandom(); ?>>
     </div>
     </div>
-    <button onClick="comic()" >Generate Random Comic</button>
