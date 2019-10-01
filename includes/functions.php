@@ -99,6 +99,11 @@ curl_close($handle);
 */
 echo $response["img"];
 }
+function getComicURLRand(){
+$randNum = rand(1,2208);
+$url = 'https://xkcd.com/'. $randNum. '/'.'info.0.json';
+echo $url;
+}
 /**
  * Starts everything and displays the template.
  */

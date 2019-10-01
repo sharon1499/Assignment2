@@ -8,7 +8,7 @@
         dataType:"HTML", // what type of data are you getting back
         success: function(data)
         {
-            $('div #target_div').html(data)//what are you going to do with what you get
+            alert(data)//what are you going to do with what you get
         },
         error: function()
         {
