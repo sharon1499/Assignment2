@@ -60,6 +60,7 @@ function page_content()
     //require config('content_path'). '/'. $page.'.php';
     require config('config_path'). $path;
 }
+// Gets the image for page 1
 function getComicImage(){
 $url = 'https://xkcd.com/info.0.json';
 /**dont change
@@ -77,12 +78,13 @@ $response = json_decode($output, true);
 curl_close($handle);
 /*dont change
 */
-echo $response["img"];
+echo $response["img"]; //returns image
 }
 
+//Gets a random image from the api
 function imageRand(){
-$rNum = rand(1,2208);
-$url = 'https://xkcd.com/'. $rNum.'/info.0.json';
+//$rNum = rand(1,2208);
+$url = 'https://xkcd.com/'.rand(1,2280) .'/info.0.json';
 /**dont change
 */
 $handle = curl_init();
@@ -98,18 +100,19 @@ $response = json_decode($output, true);
 curl_close($handle);
 /*dont change
 */
-echo $response["img"];
+echo $response["img"]; //returns image
 //echo $url;
 }
 
+//Generates the comic random url
 function getComicURL(){
-$randNum = rand(1,2208);
-$url = 'https://xkcd.com/'. $randNum. '/info.0.json';
-echo $url;
+//$rNum = rand(1,2208);
+$url = 'https://xkcd.com/'. rand(1,2280). '/info.0.json';
+echo $url; //return the random url
 }
 
-/**Function for getting the comic title and date */
-function getComicTitle(){
+//gets the comic title and date
+function getTitle(){
 $url = 'https://xkcd.com/info.0.json';
 /**dont change
 */
@@ -129,12 +132,13 @@ curl_close($handle);
 echo '<h1>' . $response["title"] . '</h1>';
 echo '<br>';
 echo '<h4>' . $response["year"] . '</h4>';
+echo '<br>';
 }
 
-/**Function for getting the comic title and date for random comic for random comic */
-function getComicTitleRand(){
-$randNum = rand(1,2208);
-$url = 'https://xkcd.com/'. $randNum. '/'.'info.0.json';
+//getts the comic title and date for a random comic
+function getRandTitle(){
+//$rNum = rand(1,2208);
+$url = 'https://xkcd.com/'. rand(1,2280) .'/info.0.json';
 /**dont change
 */
 $handle = curl_init();
@@ -153,6 +157,7 @@ curl_close($handle);
 echo '<h1>' . $response["title"] . '</h1>';
 echo '<br>';
 echo '<h4>' . $response["year"] . '</h4>';
+echo '<br>';
 }
 /**
  * Starts everything and displays the template.
