@@ -61,7 +61,7 @@ function page_content()
 }
 function getComic()
 {
-    $url = "http://xkcd.com/info.0.json";
+    $url = 'http://xkcd.com/info.0.json';
     /**dont change
     */
     $handle = curl_init();
