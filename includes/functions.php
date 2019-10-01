@@ -61,11 +61,7 @@ function page_content()
 }
 function getComic()
 {
-    $low = 0;
-    $high = 615;
-
-    $randomNum = rand($low,$high);
-    $url = "http://xkcd.com/". rand(0,615)."/info.0.json";
+    $url = "http://xkcd.com/info.0.json";
     /**dont change
     */
     $handle = curl_init();
