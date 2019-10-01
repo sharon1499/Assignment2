@@ -1,5 +1,5 @@
 <script>
-    $('#testButton').on('click',function(e)){
+    $('#testButton').on('click',function(e){
     $.ajax(
     {
         type: 'GET',  //whats your request type
