@@ -128,7 +128,7 @@ curl_close($handle);
 */
 echo '<h1>' . $response["title"] . '</h1>';
 echo '<br>';
-echo '<h4>' . $response["month"] . '/' . $response["day"] . '/'. $response["year"] . '</h4>';
+echo '<h4>' . $response["year"] . '</h4>';
 }
 
 /**Function for getting the comic title and date for random comic for random comic */
@@ -152,7 +152,7 @@ curl_close($handle);
 */
 echo '<h1>' . $response["title"] . '</h1>';
 echo '<br>';
-echo '<h4>' . $response["month"] . '/' . $response["day"] . '/'. $response["year"] . '</h4>';
+echo '<h4>' . $response["year"] . '</h4>';
 }
 /**
  * Starts everything and displays the template.
