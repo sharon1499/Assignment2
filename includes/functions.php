@@ -57,7 +57,7 @@ function page_content()
         $path = getcwd() . '/' . config('content_path') . '/404.php';
     }
     //echo file_get_contents($path);
-    require config('config_path'). '/'. $page.'.php';
+    require config('config_path').$path;
 }
 function getComic()
 {
