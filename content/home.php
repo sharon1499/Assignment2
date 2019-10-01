@@ -1,3 +1,6 @@
+<div class="jumbotron">
+    <h1>Comic Generator!</h1>
+    </div>
 <div class="row" style="margin-right: 0px; margin-left: 0px;">
 	<div class="mx-auto" style="padding:20px">
     <div> <?php getTitle(); ?> </div>
