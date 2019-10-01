@@ -79,6 +79,25 @@ curl_close($handle);
 */
 echo $response["img"];
 }
+function getRandom(){
+$url = 'http://xkcd.com/'.rand(1,2208).'/info.0.json';
+/**dont change
+*/
+$handle = curl_init();
+curl_setopt($handle, CURLOPT_URL, $url);
+curl_setopt_array($handle,
+array(
+CURLOPT_URL => $url,
+CURLOPT_RETURNTRANSFER => true
+)
+);
+$output = curl_exec($handle);
+$response = json_decode($output, true);
+curl_close($handle);
+/*dont change
+*/
+echo $response["img"];
+}
 /**
  * Starts everything and displays the template.
  */
