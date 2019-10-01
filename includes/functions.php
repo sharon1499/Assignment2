@@ -81,9 +81,8 @@ curl_close($handle);
 echo $response["img"]; //returns image
 }
 
-//Gets a random image from the api
+//Gets a random image from the api for page 2
 function imageRand(){
-//$rNum = rand(1,2208);
 $url = 'https://xkcd.com/'.rand(1,2280) .'/info.0.json';
 /**dont change
 */
@@ -106,7 +105,6 @@ echo $response["img"]; //returns image
 
 //Generates the comic random url
 function getComicURL(){
-//$rNum = rand(1,2208);
 $url = 'https://xkcd.com/'. rand(1,2280). '/info.0.json';
 echo $url; //return the random url
 }
@@ -129,15 +127,14 @@ $response = json_decode($output, true);
 curl_close($handle);
 /*dont change
 */
-echo '<h1>' . $response["title"] . '</h1>';
+echo '<h2>' . $response["title"] . '</h2>';
 echo '<br>';
-echo '<h4>' . $response["year"] . '</h4>';
+echo '<h3>' . $response["year"] . '</h3>';
 echo '<br>';
 }
 
 //getts the comic title and date for a random comic
 function getRandTitle(){
-//$rNum = rand(1,2208);
 $url = 'https://xkcd.com/'. rand(1,2280) .'/info.0.json';
 /**dont change
 */
@@ -154,9 +151,9 @@ $response = json_decode($output, true);
 curl_close($handle);
 /*dont change
 */
-echo '<h1>' . $response["title"] . '</h1>';
+echo '<h2>' . $response["title"] . '</h2>';
 echo '<br>';
-echo '<h4>' . $response["year"] . '</h4>';
+echo '<h3>' . $response["year"] . '</h3>';
 echo '<br>';
 }
 /**
