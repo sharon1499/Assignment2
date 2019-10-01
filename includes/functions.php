@@ -80,7 +80,7 @@ curl_close($handle);
 echo $response["img"];
 }
 
-function ImageRand(){
+function imageRand(){
 $rNum = rand(1,2208);
 $url = 'https://xkcd.com/'. $rNum. '/'.'info.0.json';
 /**dont change
