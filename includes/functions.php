@@ -102,7 +102,7 @@ echo $response["img"];
 //echo $url;
 }
 
-function getComicURLRand(){
+function getComicURL(){
 $randNum = rand(1,2208);
 $url = 'https://xkcd.com/'. $randNum. '/info.0.json';
 echo $url;
