@@ -78,11 +78,7 @@ $response = json_decode($output, true);
 curl_close($handle);
 /*dont change
 */
-/*$testButton = '';
-if(isset($_POST[submit]))
-{
-    echo $_POST["img"];
-}*/
+
 echo $response["img"]; //returns image
 }
 
@@ -104,7 +100,12 @@ $response = json_decode($output, true);
 curl_close($handle);
 /*dont change
 */
-echo $response["img"]; //returns image
+$random = true;
+if(isset($random))
+{
+   echo imageRand();
+}
+//echo $response["img"]; //returns image
 //echo $url;
 }
 
