@@ -2,7 +2,7 @@
     $('#testButton').on('click',function(e){
     $.ajax(
     {
-        type: 'GET',  //whats your request type
+        type: 'POST',  //whats your request type
         url: "includes/functions.php",  // whats your php file
         data: {'random' : true}, //what data are you sending via JSON
         dataType:"json", // what type of data are you getting back
