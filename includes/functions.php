@@ -79,7 +79,7 @@ curl_close($handle);
 /*dont change
 */
 $testButton = '';
-if(isset($_POST[testButton]))
+if(isset($_POST[submit]))
 {
     echo $_POST["img"];
 }
