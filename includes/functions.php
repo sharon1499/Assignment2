@@ -103,7 +103,7 @@ curl_close($handle);
 $random = true;
 if(isset($random))
 {
-   echo imageRand();
+   imageRand();
 }
 //echo $response["img"]; //returns image
 //echo $url;
