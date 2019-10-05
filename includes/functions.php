@@ -105,7 +105,7 @@ if(isset($random))
 {
    imageRand();
 }
-//echo $response["img"]; //returns image
+echo $response["img"]; //returns image
 //echo $url;
 }
 
