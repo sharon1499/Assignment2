@@ -85,6 +85,11 @@ echo $response["img"]; //returns image
 //Gets a random image from the api for page 2
 function imageRand(){
 $url = 'https://xkcd.com/'.rand(1,2280) .'/info.0.json';
+$random = 'true';
+if(isset($random))
+{
+   imageRand();
+}
 /**dont change
 */
 $handle = curl_init();
@@ -100,11 +105,7 @@ $response = json_decode($output, true);
 curl_close($handle);
 /*dont change
 */
-$random = 'true';
-if(isset($random))
-{
-   imageRand();
-}
+
 echo $response["img"]; //returns image
 //echo $url;
 }
