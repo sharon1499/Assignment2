@@ -78,6 +78,7 @@ $response = json_decode($output, true);
 curl_close($handle);
 /*dont change
 */
+$testButton = '';
 if(isset($_POST[testButton]))
 {
     echo $_POST["img"];
