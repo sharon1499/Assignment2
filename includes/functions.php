@@ -100,11 +100,11 @@ $response = json_decode($output, true);
 curl_close($handle);
 /*dont change
 */
-$random = true;
+/*$random = true;
 if(isset($random))
 {
    imageRand();
-}
+}*/
 echo $response["img"]; //returns image
 //echo $url;
 }
