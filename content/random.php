@@ -6,9 +6,9 @@
         url: "..includes/functions.php",  // whats your php file
         data: {"random" : true}, //what data are you sending via JSON
         dataType:"HTML", // what type of data are you getting back
-        success: function(data)
+        success: function(result)
         {
-            $('div #target_div').html(data)
+            $('div #target_div').html(result)
             //$('div #target_div').html(data)//what are you going to do with what you get
         },
         error: function(result)
