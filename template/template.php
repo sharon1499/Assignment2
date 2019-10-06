@@ -35,12 +35,12 @@
         url: "..includes/functions.php",  // whats your php file
         data: {"random" : true}, //what data are you sending via JSON
         dataType:"HTML", // what type of data are you getting back
-        success: function(result)
+        success: function(data)
         {
-            $("#target_div").html(result)
+            $("#target_div").html(data)
             //$('div #target_div').html(data)//what are you going to do with what you get
         },
-        error: function(result)
+        error: function()
         {
             alert("failed to get data");//what to do if it fails
         }
