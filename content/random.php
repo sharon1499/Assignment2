@@ -1,14 +1,14 @@
 <script>
-    $('#testButton').on('click',function(e){
+    $('#testButton').click(function(){
     $.ajax(
     {
         type: 'POST',  //whats your request type
-        url: "includes/functions.php",  // whats your php file
-        data: {'random' : true}, //what data are you sending via JSON
-        dataType:"json", // what type of data are you getting back
+        url: "..includes/functions.php",  // whats your php file
+        data: {"random" : true}, //what data are you sending via JSON
+        dataType:"HTML", // what type of data are you getting back
         success: function(data)
         {
-            console.log('success', data);
+            $('div #target_div').html(data)
             //$('div #target_div').html(data)//what are you going to do with what you get
         },
         error: function(result)
