@@ -60,6 +60,10 @@ function page_content()
     //require config('content_path'). '/'. $page.'.php';
     require config('config_path'). $path;
 }
+if(isset($_POST["random"]))
+{
+    imageRand();
+}
 // Gets the image for page 1
 function getComicImage(){
 $url = 'https://xkcd.com/info.0.json';
@@ -85,11 +89,7 @@ echo $response["img"]; //returns image
 //Gets a random image from the api for page 2
 function imageRand(){
 $url = 'https://xkcd.com/'.rand(1,2280) .'/info.0.json';
-$random = 'true';
-if(isset($random))
-{
-   imageRand();
-}
+
 /**dont change
 */
 $handle = curl_init();
