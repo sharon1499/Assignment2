@@ -20,5 +20,5 @@
         </script>
 <button id="change" >New Comic</button>
 <div id="randomComic">
-<div> <?php imageRand(); ?> </div>
+<div> <?php getComicRand(); ?> </div>
 </div>
