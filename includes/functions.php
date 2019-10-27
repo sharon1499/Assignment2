@@ -60,10 +60,6 @@ function page_content()
     //require config('content_path'). '/'. $page.'.php';
     require config('config_path'). $path;
 }
-if(isset($_POST["random"]))
-{
-    imageRand();
-}
 // Gets the image for page 1
 function getComicImage(){
 $url = 'https://xkcd.com/info.0.json';
@@ -88,6 +84,7 @@ echo $response["img"]; //returns image
 
 //Gets a random image from the api for page 2
 function imageRand(){
+
 $url = 'https://xkcd.com/'.rand(1,2280) .'/info.0.json';
 
 /**dont change
@@ -105,63 +102,17 @@ $response = json_decode($output, true);
 curl_close($handle);
 /*dont change
 */
-
-echo $response["img"]; //returns image
+echo '<h2>' . $response["title"] . '</h2>';
+echo '<br>';
+echo '<h3>' . $response["year"] . '</h3>';
+echo '<br>';
+echo '<div class = "d-flex justify-content-center"><img src='.$response["img"].'></div>'; //returns image
 //echo $url;
 }
-
-//Generates the comic random url
-function getComicURL(){
-$url = 'https://xkcd.com/'. rand(1,2280). '/info.0.json';
-echo $url; //return the random url
-}
-
-//gets the comic title and date
-function getTitle(){
-$url = 'https://xkcd.com/info.0.json';
-/**dont change
-*/
-$handle = curl_init();
-curl_setopt($handle, CURLOPT_URL, $url);
-curl_setopt_array($handle,
-array(
-CURLOPT_URL => $url,
-CURLOPT_RETURNTRANSFER => true
-)
-);
-$output = curl_exec($handle);
-$response = json_decode($output, true);
-curl_close($handle);
-/*dont change
-*/
-echo '<h2>' . $response["title"] . '</h2>';
-echo '<br>';
-echo '<h3>' . $response["year"] . '</h3>';
-echo '<br>';
-}
-
-//getts the comic title and date for a random comic
-function getRandTitle(){
-$url = 'https://xkcd.com/'. rand(1,2280) .'/info.0.json';
-/**dont change
-*/
-$handle = curl_init();
-curl_setopt($handle, CURLOPT_URL, $url);
-curl_setopt_array($handle,
-array(
-CURLOPT_URL => $url,
-CURLOPT_RETURNTRANSFER => true
-)
-);
-$output = curl_exec($handle);
-$response = json_decode($output, true);
-curl_close($handle);
-/*dont change
-*/
-echo '<h2>' . $response["title"] . '</h2>';
-echo '<br>';
-echo '<h3>' . $response["year"] . '</h3>';
-echo '<br>';
+$random = true;
+if(isset($random))
+{
+    imageRand();
 }
 /**
  * Starts everything and displays the template.
