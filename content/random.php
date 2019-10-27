@@ -8,7 +8,7 @@
                     data: {'random': true},
                     dataType: "HTML",
                     success: function (data) {
-                        document.getElementById('randComic').innerHTML = data;
+                        document.getElementById('randomComic').innerHTML = data;
                     },
                     error: function (result) {
                         alert("Error");
@@ -19,6 +19,6 @@
            });
         </script>
 <button id="change" >New Comic</button>
-<div id="randComic">
+<div id="randomComic">
 <div> <?php imageRand(); ?> </div>
 </div>

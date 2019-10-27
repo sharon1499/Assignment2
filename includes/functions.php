@@ -61,7 +61,7 @@ function page_content()
     require config('config_path'). $path;
 }
 // Gets the image for page 1
-function getComicImage(){
+function getComic(){
 $url = 'https://xkcd.com/info.0.json';
 /**dont change
 */
@@ -78,19 +78,14 @@ $response = json_decode($output, true);
 curl_close($handle);
 /*dont change
 */
-
-echo '<h2>' . $response["title"] . '</h2>';
+echo '<div><h1>' . $response["title"] . '</h1></div>';
 echo '<br>';
-echo '<h3>' . $response["year"] . '</h3>';
-echo '<br>';
-echo '<div class = "d-flex justify-content-center"><img src='.$response["img"].'></div>'; //returns image
+echo '<h4>' . $response["year"] . '</h4>';
+echo '<div class="d-flex justify-content-center"> <img src = ' . $response["img"] .'></div>';
 }
-
-//Gets a random image from the api for page 2
-function imageRand(){
-
-$url = 'https://xkcd.com/'.rand(1,2280) .'/info.0.json';
-
+function getComicRand(){
+$randNum = rand(1,2208);
+$url = 'https://xkcd.com/'. $randNum. '/'.'info.0.json';
 /**dont change
 */
 $handle = curl_init();
@@ -106,17 +101,10 @@ $response = json_decode($output, true);
 curl_close($handle);
 /*dont change
 */
-echo '<h2>' . $response["title"] . '</h2>';
+echo '<div><h1>' . $response["title"] . '</h1></div>';
 echo '<br>';
-echo '<h3>' . $response["year"] . '</h3>';
-echo '<br>';
-echo '<div class = "d-flex justify-content-center"><img src='.$response["img"].'></div>'; //returns image
-//echo $url;
-}
-$random = true;
-if(isset($random))
-{
-    imageRand();
+echo '<h4>' . $response["year"] . '</h4>';
+echo '<div class="d-flex justify-content-center"> <img src = ' . $response["img"] .'></div>';
 }
 /**
  * Starts everything and displays the template.
