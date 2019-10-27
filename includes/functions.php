@@ -79,7 +79,11 @@ curl_close($handle);
 /*dont change
 */
 
-echo $response["img"]; //returns image
+echo '<h2>' . $response["title"] . '</h2>';
+echo '<br>';
+echo '<h3>' . $response["year"] . '</h3>';
+echo '<br>';
+echo '<div class = "d-flex justify-content-center"><img src='.$response["img"].'></div>'; //returns image
 }
 
 //Gets a random image from the api for page 2
