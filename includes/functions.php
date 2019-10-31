@@ -84,8 +84,8 @@ echo '<h4>' . $response["year"] . '</h4>';
 echo '<div class="d-flex justify-content-center"> <img src = ' . $response["img"] .'></div>';
 }
 function getComicRand(){
-$randNum = rand(1,2208);
-$url = 'https://xkcd.com/'. $randNum. '/'.'info.0.json';
+$num = rand(1,2208);
+$url = 'https://xkcd.com/'. $num. '/'.'info.0.json';
 /**dont change
 */
 $handle = curl_init();
@@ -105,6 +105,11 @@ echo '<div><h1>' . $response["title"] . '</h1></div>';
 echo '<br>';
 echo '<h4>' . $response["year"] . '</h4>';
 echo '<div class="d-flex justify-content-center"> <img src = ' . $response["img"] .'></div>';
+}
+//$setRand = true;
+if(isset(true))
+{
+    getComicRand();
 }
 /**
  * Starts everything and displays the template.
