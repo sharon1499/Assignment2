@@ -104,7 +104,7 @@ curl_close($handle);
 echo '<div class="d-flex justify-content-center"><h1>' . $response["title"] . '</h1></div>';
 echo '<br>';
 echo '<h4 class="d-flex justify-content-center">' . $response["year"] . '</h4>';
-echo '<div class="d-flex justify-content-center"> <img src = ' . $response["img"] .'></div>';
+echo '<div class="d-flex justify-content-center" style="padding-bottom: 100px;"> <img src = ' . $response["img"] .'></div>';
 }
 if(isset($_POST['random']))
 {
