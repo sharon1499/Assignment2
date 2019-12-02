@@ -106,8 +106,7 @@ echo '<br>';
 echo '<h4>' . $response["year"] . '</h4>';
 echo '<div class="d-flex justify-content-center"> <img src = ' . $response["img"] .'></div>';
 }
-$setRand = true;
-if(isset($setRand))
+if(isset($_POST['random']))
 {
     getComicRand();
 }
