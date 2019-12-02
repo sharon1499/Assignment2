@@ -18,7 +18,7 @@
             });
            });
         </script>
-<button id="change" >New Comic</button>
+<button id="change" class="btn btn-info">Generate Comic</button>
 <div id="randomComic">
 <div> <?php getComicRand(); ?> </div>
 </div>

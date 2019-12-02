@@ -78,9 +78,9 @@ $response = json_decode($output, true);
 curl_close($handle);
 /*dont change
 */
-echo '<div><h1>' . $response["title"] . '</h1></div>';
+echo '<div class="d-flex justify-content-center"><h1>' . $response["title"] . '</h1></div>';
 echo '<br>';
-echo '<h4>' . $response["year"] . '</h4>';
+echo '<h4 class="d-flex justify-content-center">' . $response["year"] . '</h4>';
 echo '<div class="d-flex justify-content-center"> <img src = ' . $response["img"] .'></div>';
 }
 function getComicRand(){
@@ -101,9 +101,9 @@ $response = json_decode($output, true);
 curl_close($handle);
 /*dont change
 */
-echo '<div><h1>' . $response["title"] . '</h1></div>';
+echo '<div class="d-flex justify-content-center"><h1>' . $response["title"] . '</h1></div>';
 echo '<br>';
-echo '<h4>' . $response["year"] . '</h4>';
+echo '<h4 class="d-flex justify-content-center">' . $response["year"] . '</h4>';
 echo '<div class="d-flex justify-content-center"> <img src = ' . $response["img"] .'></div>';
 }
 if(isset($_POST['random']))
