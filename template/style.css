@@ -4,3 +4,12 @@
   margin: auto;
     padding:20px;
 }
+body{
+    background-color: #D3D3D3;
+}
+.jumbotron{
+    background-color: #87CEFA;
+}
+.navbar{
+    background-color: #87CEFA;
+}
