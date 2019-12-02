@@ -1,4 +1,6 @@
 .center-button{
-    text-align:center;
+    display: block;
+  max-width: 300px;
+  margin: auto;
     padding:20px;
 }
