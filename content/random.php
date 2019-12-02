@@ -18,7 +18,7 @@
             });
            });
         </script>
-<button id="change" class="btn btn-info" style="padding:50px; display:block; margin:auto;">Generate Comic</button></div>
+<button id="change" class="btn btn-info" style="padding:50px; display:block; margin:auto; width:100%; height:50px;">Generate Comic</button></div>
 <div id="randomComic" class="padding-image">
 <div> <?php getComicRand(); ?> </div>
 </div>
