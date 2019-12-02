@@ -1,2 +1,2 @@
- <div class="padding-image"><?php getComic(); ?>
+ <div style="padding-bottom: 100px;"><?php getComic(); ?>
     </div>
