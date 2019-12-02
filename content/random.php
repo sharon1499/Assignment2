@@ -19,6 +19,6 @@
            });
         </script>
 <button id="change" class="btn btn-info">Generate Comic</button>
-<div id="randomComic">
+<div id="randomComic" class="padding-image">
 <div> <?php getComicRand(); ?> </div>
 </div>
